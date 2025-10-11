@@ -8,6 +8,7 @@ body {
 }
 .container {
     width: auto;
+    box-sizing: border-box;
 }
 
 .aligner {
@@ -50,9 +51,9 @@ aside h1{
     align-items: center;
     justify-content: center;
     gap: 2rem;
-
+    width: 90%;
     height: 800px;
-    
+    box-sizing: border-box;
 }
 
 .hero img {
