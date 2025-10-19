@@ -14,31 +14,71 @@ body {
 .aligner {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
 
 
-
-nav {
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     position:sticky;
     top: 0pt;
     background-color: black;
-    height: 120px;
+    height: 140px;
+    width: auto;
     z-index: 1000;
     
 }
 
-nav h1{
+.logo{
+    text-decoration: none;
+    padding-right: auto;
+    padding-left: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
     color: whitesmoke;
+    cursor: pointer;
+    margin-top: 30px;
+
 }
+
+
+.divide{
+    height: 25px;
+    border-right: solid rgba(255, 255, 255, 0.5);
+}
+
+.navbutton{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.navbutton:hover{
+    transform: scale(1.02);
+    background-color: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition-duration: 1.5s all ease-in-out;
+    cursor: pointer;
+
+  }
+
+nav{
+    display: flex;
+    list-style: none;
+    gap: 15rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 aside h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -52,7 +92,7 @@ aside h1{
     justify-content: center;
     gap: 2rem;
     width: 90%;
-    height: 800px;
+    height: 862px;
     box-sizing: border-box;
 }
 
@@ -83,23 +123,26 @@ aside p{
 
 
 
-a {
-   
+aside a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color: black;
+    font-size: 15px;
+    color: white;
     text-decoration: none;
-    background-color: white;
-    padding: 20px 30px;
+    background-color: black;
+    padding: 30px 40px;
     border-radius: 20px;
+    cursor: pointer;
   }
    
-  a:hover{
+ aside a:hover{
     transform: scale(1.02);
-    background-color: none;
     color: rgba(0, 0, 0, 0.522);
     transition-duration: 1.5s all ease-in-out;
-  }
+    background-color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0 10px 28px hsla(0, 0%, 0%, 0.12), 0 4px 10px hsla(0, 0%, 0%, 0.08);
+}
+
 
  
 
@@ -111,37 +154,42 @@ a {
 }
   
 
-.gallery{
+.projects{
     display: flex;
     flex-direction: column;
-    height: 900px;
     width: auto;
-    justify-content: space-around;
     align-items: center;
-    margin-bottom: 80px;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    gap: 10rem;
+    width: 90%;
+    height: 866px;
+    box-sizing: border-box;
      
 }
 
-.gallery_grid {
+.projectcards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
 }
 
-.gallery h1{
+.projects h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px;
 }
 
-.gallery img{
+.projects img{
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     height: 230px;
     border-radius: 20px;
+
 }
 
 
-.gallery img:hover{
+.projects img:hover{
     transform: scale(1.05);
     transition: 0.3s all 
 ease-in-out;
@@ -170,6 +218,15 @@ ease-in-out;
 .fixedbox:hover{
     background-color: rgb(0, 0, 0);
     color: white;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 90%;
+
 }
 
 footer{
