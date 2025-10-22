@@ -5,6 +5,8 @@
 }
 body {
     background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 100%;
 }
 .container {
     width: auto;
@@ -29,7 +31,7 @@ header {
     top: 0pt;
     background-color: black;
     height: 140px;
-    width: auto;
+    width: 100%;
     z-index: 1000;
     
 }
@@ -44,6 +46,13 @@ header {
     color: whitesmoke;
     cursor: pointer;
     margin-top: 30px;
+
+}
+
+.logo:hover{
+    text-shadow: 0px 3px 4px rgba(245, 245, 245, 0.516);
+    transform: scale(1.02);
+    transition-duration: 1.5s all ease-in-out;
 
 }
 
@@ -80,12 +89,6 @@ nav{
 }
 
 
-aside h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-}
-
-
 .hero {
     display: flex;
     align-items: center;
@@ -108,15 +111,20 @@ aside{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 700px;
+    width: 100%;
     align-items: center;
 }
 
 
+aside h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
 
 aside p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 50px;
     line-height: 30px;
 }
@@ -160,8 +168,7 @@ aside a {
     width: auto;
     align-items: center;
     justify-content: center;
-    color: white;
-    background-color: black;
+    color: black;
     gap: 10rem;
     width: 90%;
     height: 866px;
@@ -175,25 +182,49 @@ aside a {
     gap: 2.5rem;
 }
 
-.projects h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 20px;
 }
+
+
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.3s all 
+ease-in-out;
+}
+
 
 .projects img{
     object-fit: cover;
     max-width: 100%;
     height: 230px;
     border-radius: 20px;
+    margin-bottom: 20px;
 
 }
 
 
-.projects img:hover{
-    transform: scale(1.05);
-    transition: 0.3s all 
-ease-in-out;
+.projects p{
+    
+    line-height: 1.7rem;
 }
+
+
+
+.projects h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+
+
 
 .fixedbox{
     display: flex;
@@ -221,12 +252,116 @@ ease-in-out;
 }
 .contact{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 800px;
+    gap: 2rem;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     width: 90%;
+    
+}
 
+.contact h1{
+    margin-top: 200px;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.42);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.contact p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-left: 170px;
+    padding-right: 170px;
+    line-height: 1.7rem;
+}
+
+
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inputwrapper {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.inputwrapper p{
+    padding-left:0px ;
+    margin-bottom: 10px;
+}
+
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+
+
+.margin-right-a {
+    margin-right: 20px;
+}
+
+input[type=radio] {
+    margin-right: 10px;
+}
+
+
+input[type=text], input[type=email], textarea {
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+}
+
+.mybutton {
+    background-color: white;
+    color: #FA4083;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.linetwo {
+    
+    display: block;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    color: black;
+    box-sizing: border-box;
+}
+
+
+
+.mybutton{
+    color: black;
+    background-color: whitesmoke;
+}
+
+
+form .mybutton {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 30px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    border-style: none;
+    margin-bottom: 50px;
 }
 
 footer{
@@ -234,14 +369,176 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap:5px;
     background-color: black;
     height: 60px;
     z-index: 1000;
 }
 
-footer p{
+footer img{
+    width: 25px;
+    height: 25px;
+}
+
+
+footer a{
+    text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     align-items: center;
     color: whitesmoke;
+}
+
+
+
+
+/*mobile view*/
+@media (max-width: 430px){
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: fit-content;
+}
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position:sticky;
+        top: 0pt;
+        background-color: black;
+        height: auto;
+        width: auto;
+        z-index: 1000;
+    
+    }
+
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divide{
+        height: 2px;
+        border-bottom: solid rgba(255, 255, 255, 0.5);
+        width: 80px;
+        border-right: none;
+    }
+
+    .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 90%;
+    height: 1000px;
+    box-sizing: border-box;
+    }
+
+    .hero img {
+        height: auto;
+        width: 100%;
+        border-radius: 20px;
+        
+    }
+
+    aside p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        line-height: 30px;
+        padding-left: 0%;
+    }
+
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        gap: 10rem;
+        width: 90%;
+        height: 1700px;
+        box-sizing: border-box;
+     
+    }
+
+    .projectcards {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+
+
+    .contact{
+        padding: 10px 10px;
+    }
+
+
+    .contact p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 1.7rem;
+        text-align: justify;
+    }
+
+    .inputwrapper p{
+        font-size: 15px;
+        padding-left: 0px;
+    }
+
+
+
+    .linetwo {
+        display: block;
+        margin-bottom: 10px;
+        padding: 12px 20px;
+        width: 30%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.85rem;
+        color: black;
+        box-sizing: border-box;
+    }
+
+
+    .fixedbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position:fixed;
+        bottom: 30px;
+        right: 20px;
+       
+        z-index: 1000;
+        width: 50px;
+        height: 30px;
+        background-color: whitesmoke;
+        color: black;
+        font-size: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px 10px;
+        border-radius: 20px;
+    }
+
+
+
+    
+
+
 }
